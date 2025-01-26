@@ -4,27 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 9 - Feedback Form</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/2-form-gPiVrQBI.css">
+    <script type="module" crossorigin src="/goit-js-hw-09/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/2-form-B6oLiGGU.css">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-DQhK85XH.css">
   </head>
   <body>
     <div class="feedback-form-container">
-      <form class="feedback-form">
-        <label for="email" class="email-label">Email</label>
-        <input class="email" type="email" name="email" id="email" required />
-
-        <label for="message" class="message-label">Message</label>
-        <!-- Відключити ресайз елементу -->
-        <textarea
-          class="message"
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          required
-        ></textarea>
-
-        <button type="submit" class="submit-btn">Submit</button>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </body>
