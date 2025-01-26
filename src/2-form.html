@@ -9,23 +9,18 @@
   </head>
   <body>
     <div class="feedback-form-container">
-      <form class="feedback-form">
-        <label for="email" class="email-label">Email</label>
-        <input class="email" type="email" name="email" id="email" required />
-
-        <label for="message" class="message-label">Message</label>
-        <!-- Відключити ресайз елементу -->
-        <textarea
-          class="message"
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          required
-        ></textarea>
-
-        <button type="submit" class="submit-btn">Submit</button>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
       </form>
     </div>
+    <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>
