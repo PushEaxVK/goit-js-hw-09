@@ -1,3 +1,5 @@
+'use strict';
+
 const formData = JSON.parse(localStorage.getItem('feedback-form-state')) || {
   email: '',
   message: '',
